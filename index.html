@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">SN</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#myhopes">My Hopes</a></li>
+                <li><a href="#technicalskills">Technical Skills</a></li>
+                <li><a href="#bookrecs">Book Recs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">SN</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#myhopes" onclick="toggleMenu()">My Hopes</a></li>
+                <li><a href="#technicalskills" onclick="toggleMenu()">Technical Skills</a></li>
+                <li><a href="#bookrecs" onclick="toggleMenu()">Book Recs</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./image/circleme-modified.png" alt = "Nesya's profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hi, I'm</p>
+            <div class="title-container">
+            <h1 class="title-type">Salma Nesya</h1>
+            </div>
+            <p class="section__text__p2">Motto: Gratitude is the best attitude</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onClick="window.open('./asset/template.pdf')"
+            >Download CV
+            </button>
+            <button 
+            class="btn btn-color-1" 
+            onClick="location.href='./#contact'"
+            >Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./image/linkedin.png" alt="My Linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/raineinmay-undefined-9454992a7/'">
+                <img src="./image/github.png" alt="My GitHub profile"
+                class="icon" onclick="location.href='https://github.com/sslmnsy'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./image/salma.jpg" alt="Gambar profil" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./image/hobbies.png" alt="Hobbies icon" class="icon">
+                        <h3>Hobbies</h3>
+                        <p>Reading <br>Journaling</p> 
+                    </div>
+                    <div class="details-container">
+                        <img src="./image/graduation-cap.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>SMAN 2 Karawang <br> Politeknik Negeri Bandung</p>
+                    </div>
+                    
+                </div>
+                <div class="text-container">
+                    <p>
+                    Nama lengkap saya Salma Nesya Putri Salia. Saya lahir di Tegal, 28 Februari 2005. Saya adalah mahasiswa yang sedang menempuh pendidikan di Politeknik Negeri Bandung 
+                    dengan prodi D4-Teknik Informatika.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <img src="./image/down-arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#myhopes'">
+    </section>
+    <section id="myhopes">
+        <p class="section__text__p1">Get to Know My</p>
+        <h1 class="title">Hopes & Wishes</h1>
+        <div class="myhopes-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="myhopes-sub-title">Harapan Setelah Lulus</h2>
+                    <div class="article-container">
+                        <article>
+                            <p>
+                                Setelah lulus, saya berharap dapat mendapatkan pekerjaan 
+                                yang sesuai dengan minat saya dan memberikan penghasilan yang stabil.
+                                Saya berharap untuk terus belajar dan berkembang.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="myhopes-sub-title">Lesson Learned</h2>
+                    <div class="article-container">
+                        <article>
+                            <p>
+                                Saya belajar dasar-dasar dalam web development menggunakan HTML, CSS dan JavaScript. 
+
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./image/down-arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#technicalskills'">
+    </section>
+    <section id="technicalskills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="myhopes-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./image/clang.png" alt="C language" class="project-img">
+                </div>
+                <h2 class="myhopes-sub-title project-title">C Language</h2>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./image/java.png" alt="Java" class="project-img">
+                </div>
+                <h2 class="myhopes-sub-title project-title">Java Language</h2>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./image/python.png" alt="Python language" class="project-img">
+                </div>
+                <h2 class="myhopes-sub-title project-title">Python Language</h2>
+            </div>
+        </div>
+        <img src="./image/down-arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#bookrecs'">
+    </section>
+    <section id="bookrecs">
+        <p class="section__text__p1">A Video of My</p>
+        <h1 class="title">Book Recommendations</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GtHC5bc3DjM?si=84G8k9zeDVA7hoL_" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <img src="./image/down-arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Find Me On</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.153471393461!2d107.56926638885494!3d-6.872207399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sen!2sid!4v1709216775980!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br><br><br>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+            <img src="./image/email.png" alt="Email icon" class="icon contact-icon">
+            <p><a href="mailto:salma.nesya.tif423@polban.ac.id">salma.nesya.tif423@polban.ac.id</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./image/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/raineinmay-undefined-9454992a7/">LinkedIn</a></p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#myhopes">My Hopes</a></li>
+                    <li><a href="#technicalskills">Technical Skills</a></li>
+                    <li><a href="#bookrecs">Book Recs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Salma Nesya. All Rights Reserved</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
