@@ -1,0 +1,85 @@
+/* Custom styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #eaebe2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 50%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #757248;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .list-group-item {
+    font-size: 0.8em;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-link {
+    color: #cbd6e2;
+    text-decoration: none;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
