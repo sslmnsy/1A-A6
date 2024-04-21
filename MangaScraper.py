@@ -58,13 +58,11 @@ class MangaScraper(scrapy.Spider):
             'synopsis': synopsis,
         }
 
-        self.results.append(item)  # Append scraped manga data to results list
-        yield item  # Yield the scraped manga item
+        self.results.append(item)  
+        yield item  
 
     def closed(self, reason):
-        # Sort the results by rank
         sorted_results = sorted(self.results, key=lambda x: int(''.join(filter(str.isdigit, x['rank']))))
-        # Output the sorted results as JSON
-        with open('manga_data.json', 'w') as f:
+        with open('A6Scrapy4.json', 'w') as f:
             import json
             json.dump(sorted_results, f, indent=4)
