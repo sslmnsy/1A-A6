@@ -990,10 +990,10 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team .member {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: hidden;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 25px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(65, 76, 100, 0.06);
 }
@@ -1001,6 +1001,8 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  width: 150x; 
+  height: 150px; 
 }
 
 .team .member .social {
@@ -1403,8 +1405,8 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fafafc;
+  display: flex;
+  justify-content: center;
 }
 
 #footer .footer-top .footer-contact {
